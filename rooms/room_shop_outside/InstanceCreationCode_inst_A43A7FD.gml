@@ -1,0 +1,1 @@
+self.mymsg = ["M's Tent//"]

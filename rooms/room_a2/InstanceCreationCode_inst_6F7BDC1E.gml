@@ -1,0 +1,1 @@
+self.mymsg = ["PATH OF PAIN - PART I %+5 %.You won't make this without a health upgrade.//"]

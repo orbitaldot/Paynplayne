@@ -1,0 +1,1 @@
+self.mymsg = ["'Free hugs!!!!!' %+5-Signed, %+5the only %.friendly cactus in the game.//"]

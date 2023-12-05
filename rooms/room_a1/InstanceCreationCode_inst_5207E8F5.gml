@@ -1,0 +1,1 @@
+self.mymsg = ["Beware of Imps! %+5 %.Sword violence is advised.//"]

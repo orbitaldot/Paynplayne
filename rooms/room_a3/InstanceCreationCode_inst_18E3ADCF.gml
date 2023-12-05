@@ -1,0 +1,1 @@
+self.mymsg = ["Mine ahead!//","Workers who forget their %c1pickaxes %c0will %.be made to dig with their hands.//"]

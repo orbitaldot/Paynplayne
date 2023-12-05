@@ -1,0 +1,1 @@
+self.mymsg = ["HOW TO USE YOUR STEEL BOOTS: %+5Hold them. $+5 %.Never, %+5ever wear them on your feet."]
