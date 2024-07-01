@@ -11,49 +11,49 @@ enum ITEMS {
 }
 
 function scr_item_info(argument0, argument1) {
-	var iname = "Error"
-	var icost = 1
-	var isprite = 0
+	var _iname = "Error"
+	var _icost = 1
+	var _isprite = 0
 
 	switch(argument0){
 		case ITEMS.HEALTH_POTION:
-			iname = "Healing Potion"
-			icost = 8
-			isprite = spr_item_test
+			_iname = "Healing Potion"
+			_icost = 8
+			_isprite = spr_item_test
 			break;
 		case ITEMS.LAZY_SWORD:
-			iname = "Lazy Sword"
-			icost = 8
-			isprite = spr_sword
+			_iname = "Lazy Sword"
+			_icost = 8
+			_isprite = spr_sword
 			break;
 		case ITEMS.HEALTH_UPGRADE:
-			iname = "Health Upgrade"
-			icost = 13
-			isprite = spr_item_test
+			_iname = "Health Upgrade"
+			_icost = 13
+			_isprite = spr_item_test
 			break;
 		case ITEMS.USELESS_POTION:
-			iname = "Useless Potion"
-			icost = 4
-			isprite = spr_item_test
+			_iname = "Useless Potion"
+			_icost = 4
+			_isprite = spr_item_test
 			break;
 		case ITEMS.LAZY_PICKAXE:
-			iname = "Lazy Pickaxe"
-			icost = 25
-			isprite = spr_pick
+			_iname = "Lazy Pickaxe"
+			_icost = 25
+			_isprite = spr_pick
 			break;
 		case ITEMS.HEALTH_UPGRADE_TWO:
-			iname = "Health Upgrade II"
-			icost = 22
+			_iname = "Health Upgrade II"
+			_icost = 22
 			break;
 		case ITEMS.LETTER:
-			iname = "Letter"
-			icost = 0
-			isprite = spr_letter
+			_iname = "Letter"
+			_icost = 0
+			_isprite = spr_letter
 			break;
 		case ITEMS.STEEL_BOOTS:
-			iname = "Steel Boots"
-			icost = 30
-			isprite = spr_boots
+			_iname = "Steel Boots"
+			_icost = 30
+			_isprite = spr_boots
 			break;
 	}
 
