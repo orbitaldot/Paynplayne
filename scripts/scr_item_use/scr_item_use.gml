@@ -1,6 +1,6 @@
 function scr_item_use(argument0) {
 	switch(argument0){
-		case 1: // HEALING POTION
+		case ITEMS.HEALTH_POTION: // HEALING POTION
 			if global.player_hp != global.player_maxhp {
 				global.player_hp += ceil(.5*global.player_maxhp)
 		
@@ -17,7 +17,7 @@ function scr_item_use(argument0) {
 				}
 			}
 			break;
-		case 2: // SWORD
+		case ITEMS.LAZY_SWORD: // SWORD
 			switch(self.facing){
 				case "up":
 					with(instance_create(x,y-13,obj_hurtbox)){
@@ -56,7 +56,7 @@ function scr_item_use(argument0) {
 			audio_play_sound(sfx_swing,0,0)
 			self.movefreeze_timer = 4
 			break;
-		case 5: // PICKAXE
+		case ITEMS.LAZY_PICKAXE: // PICKAXE
 				switch(self.facing){
 					case "up":
 						with(instance_create(x,y-13,obj_hurtbox)){
@@ -96,7 +96,4 @@ function scr_item_use(argument0) {
 				self.movefreeze_timer = 4
 			break;
 	}
-
-
-
 }
