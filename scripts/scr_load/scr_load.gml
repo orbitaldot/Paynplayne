@@ -11,7 +11,7 @@ function scr_load(argument0) {
 
 
 	var file = file_text_open_read(string(f) + "/file1")
-	for(var i = 0; i < array_length_1d(global.flags); i++){
+	for(var i = 0; i < array_length(global.flags); i++){
 		global.flags[i] = file_text_read_real(file)	
 		file_text_readln(file)
 	}

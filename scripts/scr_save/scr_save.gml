@@ -13,7 +13,7 @@ function scr_save(argument0) {
 
 	//FLAGS
 	var file = file_text_open_write(string(f) + "/file1")
-	for(var i = 0; i < array_length_1d(global.flags); i++){
+	for(var i = 0; i < array_length(global.flags); i++){
 		file_text_write_real(file,global.flags[i])
 		file_text_writeln(file)
 	}
