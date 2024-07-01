@@ -41,11 +41,11 @@ function scr_INIT_MAIN() {
 	global.player_maxhp = 15
 	global.player_money = 0
 
-	global.inventory[0] = 1
-	global.inventory[1] = 1
-	global.inventory[2] = 1
-	global.inventory[3] = 1
-	global.inventory[4] = 1
+	global.inventory[0] = 0
+	global.inventory[1] = 0
+	global.inventory[2] = 0
+	global.inventory[3] = 0
+	global.inventory[4] = 0
 	global.inv_selected = 0
 
 
