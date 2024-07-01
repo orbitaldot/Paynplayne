@@ -1,8 +1,13 @@
 {
-    "id": "be522048-27dc-4724-ba0b-7a23fcad7fb8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_move_to_point",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"scr_move_to_point",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_move_to_point",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

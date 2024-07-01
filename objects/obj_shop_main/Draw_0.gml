@@ -8,7 +8,7 @@ draw_set_colour(c_white)
 
 switch(self.state)  {
 	case "greetingsss":
-		if !instance_exists(obj_dialogue){
+		if !instance_exists(obj_dialogue) {
 			self.state = "greetings"	
 			if global.flags[4] == 0 {
 				self.choices[1] = "Talk"	
@@ -18,21 +18,21 @@ switch(self.state)  {
 		}
 		break;
 	case "greetings":
-		if !instance_exists(obj_dialogue){
+		if !instance_exists(obj_dialogue) {
 			global.msg[0] = "%NDHow may I help?//"
 			scr_dialogue(global.msg)	
 		}
 		show_choices = true
 		break;
 	case "talk":
-		if !instance_exists(obj_dialogue){
+		if !instance_exists(obj_dialogue) {
 				global.msg[0] = "%NDWhat do you want to talk about?//"
 				scr_dialogue(global.msg)	
 			}
 		
 		break;
 	case "talking":
-		if !instance_exists(obj_dialogue){
+		if !instance_exists(obj_dialogue) {
 			self.show_choices = false
 			self.state = "talk"
 			self.released = false
@@ -42,7 +42,7 @@ switch(self.state)  {
 }
 
 if self.show_choices {
-	for(var i = 0; i < array_length_1d(self.choices); i++){
+	for(var i = 0; i < array_length(self.choices); i++) {
 		if i == self.selected {
 			draw_set_colour(c_white)
 			draw_rectangle(135+i*60,206,135+i*60+string_width(self.choices[i])+8,226,true)
@@ -51,7 +51,7 @@ if self.show_choices {
 	}
 	
 	if keyboard_check_pressed(vk_right){
-		if self.selected < array_length_1d(self.choices)-1 {
+		if self.selected < array_length(self.choices)-1 {
 			self.selected++	
 		}
 	}else if keyboard_check_pressed(vk_left){
@@ -61,7 +61,7 @@ if self.show_choices {
 	}
 	
 	if self.state == "greetings" {
-		if keyboard_check_pressed(ord("A")){
+		if global.input_pressed[? "action0"] {
 			if self.selected == 2 {
 				instance_destroy(obj_dialogue)
 				self.show_choices = false
@@ -106,7 +106,7 @@ if self.state == "leave" {
 	image_alpha = lerp(image_alpha,.4,.1)
 	draw_text(36,18,"$" + string(global.player_money))
 	
-	for(var i = 0; i < array_length_1d(self.inventory); i++){
+	for(var i = 0; i < array_length(self.inventory); i++){
 		draw_set_colour(c_yellow)
 		draw_text(40,40+i*22,scr_item_info(self.inventory[i],"name"))
 		draw_set_halign(fa_right)
@@ -125,7 +125,7 @@ if self.state == "leave" {
 	}
 	draw_text(190,210,"BACK")
 	
-	if keyboard_check_pressed(ord("A")){
+	if global.input_pressed[? "action0"] {
 		if self.released {
 			if self.selected == 99999 {
 				instance_destroy(obj_dialogue)
@@ -145,7 +145,7 @@ if self.state == "leave" {
 						audio_play_sound(sfx_cashhurt,0,false)
 					}else {
 						var foundone = false
-						for(var i = 0; i < array_length_1d(global.inventory); i++){
+						for(var i = 0; i < array_length(global.inventory); i++) {
 							if global.inventory[i] == 0 {
 								global.inventory[i] = self.inventory[self.selected]	
 								foundone = true
@@ -168,27 +168,25 @@ if self.state == "leave" {
 				event_user(0)
 			}
 		}
-	}else if keyboard_check_pressed(vk_down){
-		if self.selected < array_length_1d(self.inventory)-1 {
+	}else if global.input_pressed[? "down"] {
+		if self.selected < array_length(self.inventory)-1 {
 			self.selected++	
 		}else{
 			self.selected = 99999
 		}
-	}else if keyboard_check_pressed(vk_up){
+	}else if global.input_pressed[? "up"] {
 		if self.selected = 99999 {
-			self.selected = array_length_1d(self.inventory)		
+			self.selected = array_length(self.inventory)		
 		}
 		if self.selected > 0 {
 			self.selected--	
 		}
 	}
-	
-	
-	
+
 	
 }else if self.state == "talk" {
 	image_alpha = lerp(image_alpha,.4,.1)
-	for(var i = 0; i < array_length_1d(self.topics); i++){
+	for(var i = 0; i < array_length(self.topics); i++){
 		draw_set_colour(c_yellow)
 		draw_text(40,40+i*22,self.topics[i])
 		draw_set_colour(c_white)
@@ -204,7 +202,7 @@ if self.state == "leave" {
 	}
 	draw_text(190,210,"BACK")
 	
-	if keyboard_check_pressed(ord("A")){
+	if global.input_pressed[? "action0"] {
 		if self.released {
 			if self.selected == 99999 {
 				instance_destroy(obj_dialogue)
@@ -234,7 +232,7 @@ if self.state == "leave" {
 					global.msg[8] = "She doesn't live terribly far from here - %+5 %.but y'know, %+5the way there is pretty dangerous.//"
 					global.msg[9] = "An old lady like myself shouldn't %.put herself through such struggles.//"
 					scr_dialogue(global.msg)
-					for(var i = 0; i < array_length_1d(global.inventory); i++){
+					for(var i = 0; i < array_length(global.inventory); i++){
 						if global.inventory[i] == 0 {
 							global.inventory[i] = 7
 							foundone = true
@@ -271,15 +269,15 @@ if self.state == "leave" {
 			}
 			event_user(1)
 		}
-	}else if keyboard_check_pressed(vk_down){
-		if self.selected < array_length_1d(self.topics)-1 {
+	}else if global.input_pressed[? "down"] {
+		if self.selected < array_length(self.topics)-1 {
 			self.selected++	
 		}else{
 			self.selected = 99999
 		}
-	}else if keyboard_check_pressed(vk_up){
+	}else if global.input_pressed[? "up"] {
 		if self.selected = 99999 {
-			self.selected = array_length_1d(self.topics)		
+			self.selected = array_length(self.topics)		
 		}
 		if self.selected > 0 {
 			self.selected--	
@@ -287,10 +285,10 @@ if self.state == "leave" {
 	}
 }
 
-if keyboard_check_released(ord("A")){
+if global.input_released[? "action0"] {
 	self.released = true	
 }
 
-if self.state != "buy" && self.state != "talk" && !instance_exists(obj_roomtransition){
+if self.state != "buy" && self.state != "talk" && !instance_exists(obj_roomtransition) {
 	image_alpha = lerp(image_alpha,0,.1)
 }

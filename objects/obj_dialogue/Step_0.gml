@@ -7,7 +7,6 @@ if self.did == false {
 	}
 	
 	self.mywriter = instance_create(camera_get_view_x(view_camera[0])+30,camera_get_view_y(view_camera[0])+205-a,obj_textwriter)
-	
 
 	self.destroy_on_a = true
 	if string_pos("%ND",line) == 1 {
@@ -33,7 +32,7 @@ if self.did == false {
 }
 
 if instance_exists(self.mywriter){
-	if keyboard_check_pressed(ord("D")) {
+	if global.input_pressed[? "action2"] {
 		if global.show_choices == false {
 			self.mywriter.printreveal = string_length(self.mywriter.printstring)-1
 			self.mywriter.complete = true
@@ -48,12 +47,12 @@ if instance_exists(self.mywriter){
 	}
 
 	
-	if keyboard_check_pressed(ord("A")) {
+	if global.input_pressed[? "action0"] {
 		if global.show_choices == false {
 			if self.mywriter.complete && self.destroy_on_a {
 				instance_destroy(self.mywriter)
 				self.did = false
-				if self.msg_step >= array_length_1d(self.lines){
+				if self.msg_step >= array_length(self.lines) {
 					alarm[0] = 1 
 				}
 			}	
@@ -61,7 +60,7 @@ if instance_exists(self.mywriter){
 			if global.choice != -1 {
 				instance_destroy(self.mywriter)
 				self.did = false
-				if self.msg_step >= array_length_1d(self.lines){
+				if self.msg_step >= array_length(self.lines) {
 					alarm[0] = 1 
 				}
 			}

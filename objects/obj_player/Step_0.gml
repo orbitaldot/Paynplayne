@@ -20,13 +20,13 @@ if self.state == "walk"
 && !instance_exists(obj_roomtransition)
 && !global.paused 
 && self.movefreeze_timer == 0 {
-	if keyboard_check(vk_left) {
+	if global.input[? "left"] {
 		self.facing = "left"
 		if scr_coll(self.facing) {
 			self.moving = true
 			x -= self.movespeed
 		}
-	}else if keyboard_check(vk_right) {
+	}else if global.input[? "right"] {
 		self.facing = "right"
 		if scr_coll(self.facing) {
 			self.moving = true
@@ -34,13 +34,13 @@ if self.state == "walk"
 		}
 	}
 
-	if keyboard_check(vk_up) {
+	if global.input[? "up"] {
 		self.facing = "up"
 		if scr_coll(self.facing) {
 			self.moving = true
 			y -= self.movespeed
 		}
-	}else if keyboard_check(vk_down) {
+	}else if global.input[? "down"] {
 		self.facing = "down"
 		if scr_coll(self.facing) {
 			self.moving = true
@@ -48,9 +48,9 @@ if self.state == "walk"
 		}
 	}
 	
-	if keyboard_check_pressed(ord("A")) {
+	if global.input_pressed[? "action0"] {
 		scr_interact(self.facing,1)	
-	}else if keyboard_check_pressed(ord("S")){
+	}else if global.input_pressed[? "action1"] {
 		if global.inventory[global.inv_selected] != 0 {
 			scr_item_use(global.inventory[global.inv_selected])	
 		}
@@ -78,7 +78,7 @@ if self.movefreeze_timer == 0 {
 
 if self.moving {
 	image_speed = 1
-	if keyboard_check(vk_lshift){
+	if keyboard_check(vk_lshift) {
 		self.movespeed = ceil(lerp(self.movespeed,2.5,.2))
 	}else{
 		self.movespeed = ceil(lerp(self.movespeed,1.5,.2))	

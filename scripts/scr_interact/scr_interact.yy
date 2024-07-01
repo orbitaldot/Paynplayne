@@ -1,8 +1,13 @@
 {
-    "id": "229953d5-c44b-4efa-bf07-0fbcfe16bc8b",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_interact",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"scr_interact",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_interact",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,8 +1,13 @@
 {
-    "id": "4df35379-9701-495d-bdde-6b4c5c95d0bf",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_screenshake",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"scr_screenshake",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_screenshake",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

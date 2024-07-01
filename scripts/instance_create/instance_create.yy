@@ -1,8 +1,13 @@
 {
-    "id": "3f989a10-600f-4856-826b-feb84d1fb5ac",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "instance_create",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"instance_create",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"instance_create",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

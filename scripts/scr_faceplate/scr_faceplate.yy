@@ -1,8 +1,13 @@
 {
-    "id": "790fe3b3-f10b-474c-b615-e93cdaa97d55",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_faceplate",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"scr_faceplate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_faceplate",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

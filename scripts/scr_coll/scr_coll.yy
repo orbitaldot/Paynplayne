@@ -1,8 +1,13 @@
 {
-    "id": "0690232a-a772-495e-b855-828f40ed636f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_coll",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"scr_coll",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_coll",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

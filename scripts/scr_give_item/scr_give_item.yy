@@ -1,8 +1,13 @@
 {
-    "id": "1d7ad4bb-8873-48e8-9993-caeacf0d00ca",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_give_item",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"scr_give_item",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_give_item",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

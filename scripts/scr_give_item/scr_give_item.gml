@@ -1,10 +1,14 @@
-if global.inventory[0] == 0 {
-	global.inventory[0] = argument0
-	obj_player.values[3] = 8
-	if is_real(argument0){
-		global.item_places[? string(argument0) + "r"] = 1
-	}
+function scr_give_item(argument0) {
+	if global.inventory[0] == 0 {
+		global.inventory[0] = argument0
+		obj_player.values[3] = 8
+		if is_real(argument0){
+			global.item_places[? string(argument0) + "r"] = 1
+		}
 		
-	return true
+		return true
+	}
+	return false
+
+
 }
-return false

@@ -1,8 +1,13 @@
 {
-    "id": "3cb53977-ce53-4e79-96d1-50a911bbec1a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_item_use",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "$GMScript":"",
+  "%Name":"scr_item_use",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_item_use",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
