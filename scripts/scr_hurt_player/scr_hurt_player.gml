@@ -17,6 +17,4 @@ function scr_hurt_player(argument0, argument1) {
 	}
 
 	return false
-
-
 }
