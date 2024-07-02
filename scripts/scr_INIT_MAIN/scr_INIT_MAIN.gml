@@ -3,7 +3,16 @@ function scr_INIT_MAIN() {
 	global.window_size = [400,240]
 
 	global.window_scale = 2
-	window_set_size(global.window_size[0]*global.window_scale,global.window_size[1]*global.window_scale)
+	
+	var _ww = global.window_size[0] * global.window_scale;
+	var _wh = global.window_size[1] * global.window_scale;
+	
+	window_set_size(_ww, _wh);
+	window_set_position(
+		display_get_width()/2 - _ww/2,
+		display_get_height()/2 - _wh/2
+	);
+	
 	scr_ADJUST_WINDOW()
 	
 	scr_input_setup();
@@ -47,6 +56,4 @@ function scr_INIT_MAIN() {
 	global.inventory[3] = 0
 	global.inventory[4] = 0
 	global.inv_selected = 0
-
-
 }
