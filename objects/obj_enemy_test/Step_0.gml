@@ -44,7 +44,7 @@ self.y += self.vel_y * 2
 scr_depth(9000)
 
 if place_meeting(x,y,obj_player){
-	scr_hurt_player(2,120)
+	scr_hurt_player(2,60)
 }
 
 var inst = instance_place(x,y,obj_hurtbox)
