@@ -125,6 +125,7 @@
     {"id":{"name":"scr_mus_fadeout","path":"scripts/scr_mus_fadeout/scr_mus_fadeout.yy",},},
     {"id":{"name":"scr_mus_play","path":"scripts/scr_mus_play/scr_mus_play.yy",},},
     {"id":{"name":"scr_reshuffleinv","path":"scripts/scr_reshuffleinv/scr_reshuffleinv.yy",},},
+    {"id":{"name":"scr_rock_check","path":"scripts/scr_rock_check/scr_rock_check.yy",},},
     {"id":{"name":"scr_save","path":"scripts/scr_save/scr_save.yy",},},
     {"id":{"name":"scr_screenshake","path":"scripts/scr_screenshake/scr_screenshake.yy",},},
     {"id":{"name":"mus_overworld","path":"sounds/mus_overworld/mus_overworld.yy",},},

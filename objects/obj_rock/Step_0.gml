@@ -10,5 +10,6 @@ if inst != noone {
 		if global.player_hp > global.player_maxhp {
 			global.player_hp = global.player_maxhp	
 		}
+		scr_rock_check(true)
 	}
 }

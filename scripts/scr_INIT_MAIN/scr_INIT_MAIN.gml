@@ -28,6 +28,8 @@ function scr_INIT_MAIN() {
 	global.choices = ["Yes","No"]
 	global.choice = -1
 	global.show_choices = false
+	
+	global.rocks_destroyed = ds_map_create();
 
 	scr_FLAGS()
 
