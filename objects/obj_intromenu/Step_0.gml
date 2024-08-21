@@ -7,7 +7,7 @@ if global.input_pressed[? "action0"] {
 	
 }
 
-if self.pressed_a > 5 {
+if self.pressed_a > 0 {
 	instance_create(0,0,startshaker)
 	room_goto(room_shop_outside)	
 }
