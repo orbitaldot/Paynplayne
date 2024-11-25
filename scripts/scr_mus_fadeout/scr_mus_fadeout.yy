@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_mus_fadeout",
   "isCompatibility":false,
   "isDnD":false,

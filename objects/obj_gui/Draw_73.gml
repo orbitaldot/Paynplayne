@@ -32,7 +32,7 @@ draw_set_valign(fa_bottom)
 var a = 1
 if instance_exists(obj_player){
 	if obj_player.invincible_timer != 0 {
-		a = 1 +	clamp((obj_player.invincible_timer-110)/120,0,1)
+		a = 1 +	clamp(obj_player.invincible_timer/120, 0, 1.25);
 	}
 }
 draw_text_transformed(x+390,y+230,string(global.player_money) + " $",a,a*a,0)

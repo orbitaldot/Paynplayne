@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_move_to_point",
   "isCompatibility":false,
   "isDnD":false,

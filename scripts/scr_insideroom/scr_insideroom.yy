@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_insideroom",
   "isCompatibility":false,
   "isDnD":false,

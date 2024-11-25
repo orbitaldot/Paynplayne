@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_ADJUST_WINDOW",
   "isCompatibility":false,
   "isDnD":false,

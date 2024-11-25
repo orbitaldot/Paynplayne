@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_depth",
   "isCompatibility":false,
   "isDnD":false,
